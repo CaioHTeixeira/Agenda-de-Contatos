@@ -1,0 +1,78 @@
+<!-- include header -->
+<%- include('include/_header') %>
+<!-- /include header -->
+
+  <!-- Main Site -->
+  <main id="site-main">
+    <div class="container">
+        <div class="box-nav d-flex justify-between">
+           <div class="filter">
+               <a href="/"><i class="fas fa-angle-double-left"></i> Voltar</a>
+           </div>
+        </div>
+        <div class="form-title text-center">
+            <h2 class="text-dark">Atualização de cadastro</h2>
+            <span class="text-light">Use o formulário abaixo para atualizar o cliente</span>
+        </div>
+
+        <!-- add user form -->
+         <!-- form handling -->
+ <form method="POST" id="update_user">
+    <div class="new_user">
+        <div class="form-group">
+            <label for="Nome" class="text-light">Nome</label>
+            <input type="hidden" name="id" value="<%= user._id %>">
+            <input type="text" name="nome" value="<%= user.nome %>" placeholder="Digite um nome">
+        </div>
+        <div class="form-group">
+            <label for="Sobrenome" class="text-light">Sobrenome</label>
+            <input type="text" name="sobrenome" value="<%= user.sobrenome %>" placeholder="Digite um sobrenome">
+        </div>
+        <div class="form-group">
+            <label for="Empresa" class="text-light">Empresa</label>
+            <input type="text" name="empresa" value="<%= user.empresa %>" placeholder="Digite a empresa">
+        </div>
+        <div class="form-group">
+            <label for="Cargo" class="text-light">Cargo</label>
+            <input type="text" name="cargo" value="<%= user.cargo %>" placeholder="Digite o cargo">
+        </div>
+        <div class="form-group">
+            <label for="Apelido" class="text-light">Apelido</label>
+            <input type="text" name="apelido" value="<%= user.apelido %>" placeholder="Digite um apelido">
+        </div>
+        <div class="form-group">
+            <label for="Data_Aniversario" class="text-light">Data Aniversario</label>
+            <input type="text" name="data_aniversario" value="<%= user.data_aniversario %>" placeholder="Digite o aniversario">
+        </div>
+        <div class="form-group">
+            <label for="Emails" class="text-light">Emails</label>
+            <input type="text" name="emails" value="<%= user.emails %>" placeholder="Digite os emails">
+        </div>
+        <div class="form-group">
+            <label for="Telefones" class="text-light">Telefones</label>
+            <input type="text" name="telefones" value="<%= user.telefones %>" placeholder="Digite os telefones">
+        </div>
+        <div class="form-group">
+            <label for="Enderecos" class="text-light">Enderecos</label>
+            <input type="text" name="enderecos" value="<%= user.enderecos %>" placeholder="Digite os endereços">
+        </div>
+        <div class="form-group">
+            <label for="Observacoes" class="text-light">Observacoes</label>
+            <input type="text" name="observacoes" value="<%= user.observacoes %>" placeholder="Digite uma observação">
+        </div>
+        
+
+        <div class="form-group">
+            <button type="submit" class="btn text-dark update">Salvar</button>
+        </div>
+
+    </div>
+</form>
+       
+    </div>
+</main>
+<!-- /Main Site -->
+
+<!-- include footer -->
+<%- include('include/_footer') %>
+<!-- /include footer -->
