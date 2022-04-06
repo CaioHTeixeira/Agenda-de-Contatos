@@ -74,6 +74,7 @@ a {
 #site-main{
     margin: auto;
     margin-top: 6em;
+    margin-right: 150px;
     font-family: 'Barlow', sans-serif;
 }
 
@@ -100,8 +101,13 @@ table{
 
 .table td > a.btn{
     padding: .3em 1em;
-    font-size: 1.1em;
+    font-size: 0.9em;
     margin: 0 .2em;
+    display: block;   
+}
+
+.table td > a.btn.update{
+    margin-bottom: 5px;
 }
 
 .table tr:hover{
@@ -110,9 +116,6 @@ table{
 
 .table tr:hover td > a{
     box-shadow: none;
-    display: block;
-    margin: 5px;
-    margin-bottom: 0;
 }
 
 .table .thead-dark th{
